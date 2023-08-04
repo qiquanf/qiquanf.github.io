@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="计算机基础1、HTTP响应码2XX	成功 3XX	重定向 4XX	客户端错误&#x2F;请求错误 5XX	服务端错误 常见响应码：200（成功），301（永久移动），302（临时移动），400（错误请求），401（未授权），403（请求被禁止），404（未找到），500（服务器内部错误） 2、数据包结构 POST与GET的区别GET:    GET把参数包含在URL中    GET请求在URL中传">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="计算机基础1、HTTP响应码2XX	成功 3XX	重定向 4XX	客户端错误&#x2F;请求错误 5XX	服务端错误 常见响应码：200（成功），301（永久移动），302（临时移动），400（错误请求），401（未授权），403（请求被禁止），404（未找到），500（服务器内部错误） 2、数据包结构 POST与GET的区别GET:    GET把参数包含在URL中    GET请求在URL中传">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230804165045244.png">
+<meta property="article:published_time" content="2023-08-04T09:24:03.316Z">
+<meta property="article:modified_time" content="2023-08-04T09:24:03.384Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230804165045244.png">
+
+
+<link rel="canonical" href="http://example.com/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/","path":"2023/08/04/计算机基础/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">计算机基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81HTTP%E5%93%8D%E5%BA%94%E7%A0%81"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、HTTP响应码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E5%93%8D%E5%BA%94%E7%A0%81%EF%BC%9A"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">常见响应码：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%93%E6%9E%84"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、数据包结构</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#POST%E4%B8%8EGET%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.0.2.0.1.</span> <span class="nav-text">POST与GET的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、请求方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4%E3%80%81%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">4、操作系统的常用命令</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-08-04 17:24:03" itemprop="dateCreated datePublished" datetime="2023-08-04T17:24:03+08:00">2023-08-04</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h3 id="1、HTTP响应码"><a href="#1、HTTP响应码" class="headerlink" title="1、HTTP响应码"></a>1、HTTP响应码</h3><p>2XX	成功</p>
+<p>3XX	重定向</p>
+<p>4XX	客户端错误&#x2F;请求错误</p>
+<p>5XX	服务端错误</p>
+<h5 id="常见响应码："><a href="#常见响应码：" class="headerlink" title="常见响应码："></a>常见响应码：</h5><p>200（成功），301（永久移动），302（临时移动），400（错误请求），401（未授权），403（请求被禁止），404（未找到），500（服务器内部错误）</p>
+<h3 id="2、数据包结构"><a href="#2、数据包结构" class="headerlink" title="2、数据包结构"></a>2、数据包结构</h3><p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230804165045244.png" alt="image-20230804165045244"></p>
+<h5 id="POST与GET的区别"><a href="#POST与GET的区别" class="headerlink" title="POST与GET的区别"></a>POST与GET的区别</h5><p>GET:<br>    GET把参数包含在URL中<br>    GET请求在URL中传送的参数是有长度限制的<br>    GET产生一个TCP数据包，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）<br>    GET会被浏览器进行主动缓存</p>
+<p>POST:<br>    POST通过request body传递参数<br>    POST请求在URL中传送的参数是没有长度限制的<br>    POST产生两个TCP数据包，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。<br>    POST不会被浏览器进行主动缓存</p>
+<h3 id="3、请求方式"><a href="#3、请求方式" class="headerlink" title="3、请求方式"></a>3、请求方式</h3><p>一．接口请求的六种常见方式：<br>1、Get 向特定资源发出请求（请求指定页面信息，并返回实体主体）</p>
+<p>2、Post 向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改</p>
+<p>3、Put 向指定资源位置上上传其最新内容（从客户端向服务器传送的数据取代指定文档的内容）</p>
+<p>4、Head 与服务器索与get请求一致的相应，响应体不会返回，获取包含在小消息头中的原信息（与get请求类似，返回的响应中没有具体内容，用于获取报头）</p>
+<p>5、Delete 请求服务器删除request-URL所标示的资源*（请求服务器删除页面）</p>
+<p>6、opions 返回服务器针对特定资源所支持的HTML请求方法 或web服务器发送*测试服务器功能（允许客户端查看服务器性能）</p>
+<p>二、get请求<br>URL全称是资源描述符，我们可以这样认为：一个URL地址，它用于描述一个网络上的资源，而HTTP中的GET，POST，PUT，DELETE就对应着对这个资源的查 ，改 ，增 ，删 4个操作。到这里，大家应该有个大概的了解了，GET一般用于获取&#x2F;查询资源信息。</p>
+<p>三、post请求<br>post向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改。post请求一般通过body传递参数。</p>
+<p>四、head请求<br>HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。</p>
+<p>五、put请求<br>PUT：这个方法比较少见。HTML表单也不支持这个。本质上来讲， PUT和POST极为相似，都是向服务器发送数据，但它们之间有一个重要区别，PUT通常指定了资源的存放位置，而POST则没有，POST的数据存放位置由服务器自己决定。</p>
+<p>举个例子：如一个用于提交博文的URL，&#x2F;addBlog。如果用PUT，则提交的URL会是像这样的”&#x2F;addBlog&#x2F;abc123”，其中abc123就是这个博文的地址。而如果用POST，则这个地址会在提交后由服务器告知客户端。目前大部分博客都是这样的。显然，PUT和POST用途是不一样的。具体用哪个还取决于当前的业务场景。</p>
+<p>六、DELETE请求<br>DELETE：删除某一个资源。基本上这个也很少见，不过还是有一些地方比如amazon的S3云服务里面就用的这个方法来删除资源。</p>
+<p>七、options请求<br>OPTIONS：这个方法很有趣，但极少使用。它用于获取当前URL所支持的方法。若请求成功，则它会在HTTP头中包含一个名为“Allow”的头，值是所支持的方法，如“GET, POST”。</p>
+<h4 id="4、操作系统的常用命令"><a href="#4、操作系统的常用命令" class="headerlink" title="4、操作系统的常用命令"></a>4、操作系统的常用命令</h4><p>pwd命令    功能: 查看当前所在的工作目录<br>不需要指定任何选项或参数,登录终端窗口后默认的工作目录是用户的主目录<br>cd命令     功能： 在不同的目录间切换，即更改当前工作目录<br>cd  .          &#x2F;&#x2F; 进入当前目录</p>
+<p>cd  ..         &#x2F;&#x2F; 进入上一级目录</p>
+<p>cd  -           &#x2F;&#x2F; 进入上次所在的目录</p>
+<p>cd  ～       &#x2F;&#x2F; 进入当前登录用户的主目录 </p>
+<p> cd  ～root    &#x2F;&#x2F; 进入root用户的主目录 </p>
+<p>ls命令    功能：显示目录内容</p>
+<p>ls           &#x2F;&#x2F; 默认按文件名排序，只显示非隐藏文件</p>
+<p>ls  -a        &#x2F;&#x2F; 列出所有文件包括隐藏文件</p>
+<p>ls  -l        &#x2F;&#x2F; 使用长格式显示文件的详细信息，而且一行显示一个文件</p>
+<p>cat命令    功能：在标准输出设备上显示文件内容  注：可以同时打开多个文件</p>
+<p>cat -b    &#x2F;&#x2F;只显示非空行的行号</p>
+<p>cat -n     &#x2F;&#x2F;显示所有行的行号</p>
+<p>head 命令   功能：显示文件开头若干行内容，默认显示10行</p>
+<p>head -c size    &#x2F;&#x2F;显示文件开头的size字节</p>
+<p>head -n number   &#x2F;&#x2F;显示文件开头的number行</p>
+<p>tail 命令  功能:显示文件末尾若干行内容，默认显示后10行</p>
+<p>tail - c size  &#x2F;&#x2F;显示文件末尾的size字节</p>
+<p>tail - n number  &#x2F;&#x2F;显示文件末尾的number行</p>
+<p>more命令    功能：分页显示文件，即一次显示一页内容</p>
+<p>F键或空格键    &#x2F;&#x2F;向下翻一页</p>
+<p>D键或ctrl+D   &#x2F;&#x2F;向下翻半页</p>
+<p>B键或Ctrl+B  &#x2F;&#x2F;向上翻一页</p>
+<p>回车键  &#x2F;&#x2F;向下移动一行</p>
+<p>Q键     &#x2F;&#x2F;退出more命令</p>
+<p>less命令  功能 分页显示文件，即一次显示一页内容</p>
+<p>less是more的增强版，除了具有more的功能以外，还可以按上下左右方向键移动文件内容</p>
+<p>也可以用 U键或Ctrl+u键组合键向上翻半页</p>
+<p>less命令和more命令区别</p>
+<p>less可以按上下方向键显示上下内容，more不可以</p>
+<p>more翻页的时候，显示有百分比在最后一行</p>
+<p>less退出后shell不会留下刚刚显示的内容，而more退出后会在shell上留下刚显示的内容</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/03/Ensp%E9%85%8D%E7%BD%AENAT%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E6%8A%80%E6%9C%AF/" rel="prev" title="">
+                  <i class="fa fa-angle-left"></i> 
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

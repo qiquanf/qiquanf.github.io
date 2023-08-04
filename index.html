@@ -112,7 +112,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -130,6 +130,319 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-08-04 17:24:03" itemprop="dateCreated datePublished" datetime="2023-08-04T17:24:03+08:00">2023-08-04</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h3 id="1、HTTP响应码"><a href="#1、HTTP响应码" class="headerlink" title="1、HTTP响应码"></a>1、HTTP响应码</h3><p>2XX	成功</p>
+<p>3XX	重定向</p>
+<p>4XX	客户端错误&#x2F;请求错误</p>
+<p>5XX	服务端错误</p>
+<h5 id="常见响应码："><a href="#常见响应码：" class="headerlink" title="常见响应码："></a>常见响应码：</h5><p>200（成功），301（永久移动），302（临时移动），400（错误请求），401（未授权），403（请求被禁止），404（未找到），500（服务器内部错误）</p>
+<h3 id="2、数据包结构"><a href="#2、数据包结构" class="headerlink" title="2、数据包结构"></a>2、数据包结构</h3><p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230804165045244.png" alt="image-20230804165045244"></p>
+<h5 id="POST与GET的区别"><a href="#POST与GET的区别" class="headerlink" title="POST与GET的区别"></a>POST与GET的区别</h5><p>GET:<br>    GET把参数包含在URL中<br>    GET请求在URL中传送的参数是有长度限制的<br>    GET产生一个TCP数据包，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）<br>    GET会被浏览器进行主动缓存</p>
+<p>POST:<br>    POST通过request body传递参数<br>    POST请求在URL中传送的参数是没有长度限制的<br>    POST产生两个TCP数据包，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。<br>    POST不会被浏览器进行主动缓存</p>
+<h3 id="3、请求方式"><a href="#3、请求方式" class="headerlink" title="3、请求方式"></a>3、请求方式</h3><p>一．接口请求的六种常见方式：<br>1、Get 向特定资源发出请求（请求指定页面信息，并返回实体主体）</p>
+<p>2、Post 向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改</p>
+<p>3、Put 向指定资源位置上上传其最新内容（从客户端向服务器传送的数据取代指定文档的内容）</p>
+<p>4、Head 与服务器索与get请求一致的相应，响应体不会返回，获取包含在小消息头中的原信息（与get请求类似，返回的响应中没有具体内容，用于获取报头）</p>
+<p>5、Delete 请求服务器删除request-URL所标示的资源*（请求服务器删除页面）</p>
+<p>6、opions 返回服务器针对特定资源所支持的HTML请求方法 或web服务器发送*测试服务器功能（允许客户端查看服务器性能）</p>
+<p>二、get请求<br>URL全称是资源描述符，我们可以这样认为：一个URL地址，它用于描述一个网络上的资源，而HTTP中的GET，POST，PUT，DELETE就对应着对这个资源的查 ，改 ，增 ，删 4个操作。到这里，大家应该有个大概的了解了，GET一般用于获取&#x2F;查询资源信息。</p>
+<p>三、post请求<br>post向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改。post请求一般通过body传递参数。</p>
+<p>四、head请求<br>HEAD和GET本质是一样的，区别在于HEAD不含有呈现数据，而仅仅是HTTP头信息。有的人可能觉得这个方法没什么用，其实不是这样的。想象一个业务情景：欲判断某个资源是否存在，我们通常使用GET，但这里用HEAD则意义更加明确。</p>
+<p>五、put请求<br>PUT：这个方法比较少见。HTML表单也不支持这个。本质上来讲， PUT和POST极为相似，都是向服务器发送数据，但它们之间有一个重要区别，PUT通常指定了资源的存放位置，而POST则没有，POST的数据存放位置由服务器自己决定。</p>
+<p>举个例子：如一个用于提交博文的URL，&#x2F;addBlog。如果用PUT，则提交的URL会是像这样的”&#x2F;addBlog&#x2F;abc123”，其中abc123就是这个博文的地址。而如果用POST，则这个地址会在提交后由服务器告知客户端。目前大部分博客都是这样的。显然，PUT和POST用途是不一样的。具体用哪个还取决于当前的业务场景。</p>
+<p>六、DELETE请求<br>DELETE：删除某一个资源。基本上这个也很少见，不过还是有一些地方比如amazon的S3云服务里面就用的这个方法来删除资源。</p>
+<p>七、options请求<br>OPTIONS：这个方法很有趣，但极少使用。它用于获取当前URL所支持的方法。若请求成功，则它会在HTTP头中包含一个名为“Allow”的头，值是所支持的方法，如“GET, POST”。</p>
+<h4 id="4、操作系统的常用命令"><a href="#4、操作系统的常用命令" class="headerlink" title="4、操作系统的常用命令"></a>4、操作系统的常用命令</h4><p>pwd命令    功能: 查看当前所在的工作目录<br>不需要指定任何选项或参数,登录终端窗口后默认的工作目录是用户的主目录<br>cd命令     功能： 在不同的目录间切换，即更改当前工作目录<br>cd  .          &#x2F;&#x2F; 进入当前目录</p>
+<p>cd  ..         &#x2F;&#x2F; 进入上一级目录</p>
+<p>cd  -           &#x2F;&#x2F; 进入上次所在的目录</p>
+<p>cd  ～       &#x2F;&#x2F; 进入当前登录用户的主目录 </p>
+<p> cd  ～root    &#x2F;&#x2F; 进入root用户的主目录 </p>
+<p>ls命令    功能：显示目录内容</p>
+<p>ls           &#x2F;&#x2F; 默认按文件名排序，只显示非隐藏文件</p>
+<p>ls  -a        &#x2F;&#x2F; 列出所有文件包括隐藏文件</p>
+<p>ls  -l        &#x2F;&#x2F; 使用长格式显示文件的详细信息，而且一行显示一个文件</p>
+<p>cat命令    功能：在标准输出设备上显示文件内容  注：可以同时打开多个文件</p>
+<p>cat -b    &#x2F;&#x2F;只显示非空行的行号</p>
+<p>cat -n     &#x2F;&#x2F;显示所有行的行号</p>
+<p>head 命令   功能：显示文件开头若干行内容，默认显示10行</p>
+<p>head -c size    &#x2F;&#x2F;显示文件开头的size字节</p>
+<p>head -n number   &#x2F;&#x2F;显示文件开头的number行</p>
+<p>tail 命令  功能:显示文件末尾若干行内容，默认显示后10行</p>
+<p>tail - c size  &#x2F;&#x2F;显示文件末尾的size字节</p>
+<p>tail - n number  &#x2F;&#x2F;显示文件末尾的number行</p>
+<p>more命令    功能：分页显示文件，即一次显示一页内容</p>
+<p>F键或空格键    &#x2F;&#x2F;向下翻一页</p>
+<p>D键或ctrl+D   &#x2F;&#x2F;向下翻半页</p>
+<p>B键或Ctrl+B  &#x2F;&#x2F;向上翻一页</p>
+<p>回车键  &#x2F;&#x2F;向下移动一行</p>
+<p>Q键     &#x2F;&#x2F;退出more命令</p>
+<p>less命令  功能 分页显示文件，即一次显示一页内容</p>
+<p>less是more的增强版，除了具有more的功能以外，还可以按上下左右方向键移动文件内容</p>
+<p>也可以用 U键或Ctrl+u键组合键向上翻半页</p>
+<p>less命令和more命令区别</p>
+<p>less可以按上下方向键显示上下内容，more不可以</p>
+<p>more翻页的时候，显示有百分比在最后一行</p>
+<p>less退出后shell不会留下刚刚显示的内容，而more退出后会在shell上留下刚显示的内容</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/03/Ensp%E9%85%8D%E7%BD%AENAT%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E6%8A%80%E6%9C%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/03/Ensp%E9%85%8D%E7%BD%AENAT%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E6%8A%80%E6%9C%AF/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-08-03 13:42:19 / Modified: 14:43:11" itemprop="dateCreated datePublished" datetime="2023-08-03T13:42:19+08:00">2023-08-03</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="eNSP配置NAT地址转换技术"><a href="#eNSP配置NAT地址转换技术" class="headerlink" title="eNSP配置NAT地址转换技术"></a>eNSP配置NAT地址转换技术</h1><p>拓扑图：</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803124339918.png" alt="image-20230803124339918"></p>
+<h3 id="搭环境"><a href="#搭环境" class="headerlink" title="搭环境"></a>搭环境</h3><p>PC1、PC2配置好IP、网关后，开始配置AR1的两个端口</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803124920551.png" alt="image-20230803124920551"></p>
+<p>配置完AR1可以在PC1、PC2上ping一下测试</p>
+<p>然后配置AR2和PC3</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803125512923.png" alt="image-20230803125512923"></p>
+<p>配置完后用pc3去ping AR2的两个端口</p>
+<h3 id="配置静态NAT"><a href="#配置静态NAT" class="headerlink" title="配置静态NAT"></a>配置静态NAT</h3><p>目的：让你指定的ip转换成另一个ip</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803130410578.png" alt="image-20230803130410578"></p>
+<p>进入AR1的g0&#x2F;0&#x2F;1配置NAT</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803130828685.png" alt="image-20230803130828685"></p>
+<p>配置完后在AR2的g0&#x2F;0&#x2F;0进行抓包检验，由pc1去平g0&#x2F;0&#x2F;0的10.10.1.2来检验</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803131229379.png" alt="image-20230803131229379"></p>
+<p>发现pc1的ip经过转换后由192.168.1.1变成了172.16.1.1</p>
+<p>再试试，由pc2去平10.10.1.2</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803131408240.png" alt="image-20230803131408240"></p>
+<p>发现pc2的ip没有转变</p>
+<h3 id="配置动态NAT"><a href="#配置动态NAT" class="headerlink" title="配置动态NAT"></a>配置动态NAT</h3><p>配置动态NAT需要创建一个地址池并配合acl使用</p>
+<p>首先把AR1的静态NAT取消掉</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803132240304.png" alt="image-20230803132240304"></p>
+<p>然后创建nat地址池，名字为1，范围是172.16.1.1道172.16.1.5</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803133059721.png" alt="image-20230803133059721"></p>
+<p>定义acl规则</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803133316934.png" alt="image-20230803133316934"></p>
+<p>在端口上应用acl到nat上</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803133716478.png" alt="image-20230803133716478"></p>
+<p>pc1的ip转换成功</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803134026643.png" alt="image-20230803134026643"></p>
+<p>pc2的ip转换成功</p>
+<p><img src="C:%5CUsers%5Cqiu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230803134211220.png" alt="image-20230803134211220"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/31/%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/07/31/%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-07-31 15:59:57" itemprop="dateCreated datePublished" datetime="2023-07-31T15:59:57+08:00">2023-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-01 19:06:02" itemprop="dateModified" datetime="2023-08-01T19:06:02+08:00">2023-08-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="指纹识别"><a href="#指纹识别" class="headerlink" title="指纹识别"></a>指纹识别</h2><h5 id="指纹识别是什么？"><a href="#指纹识别是什么？" class="headerlink" title="指纹识别是什么？"></a>指纹识别是什么？</h5><p>指纹是Web应用程序测试的第一项任务。指纹识别将为渗透测试人员提供大量有用的信息，指纹是组件上能标识对象类型的一段特征信息，用来</p>
+<p><strong>必要性</strong>：在渗透测试中只有识别出相应的Web容器或者CMS，才能查找与其相关的漏洞，然后才能进行相应的渗透操作。</p>
+<p>常见的CMS：dede（织梦）、帝国、骑士（74）、易通、动易、Php、SiteServer、易点、Dayu、科讯、齐博 等。</p>
+<p><strong>指纹识别平台：</strong></p>
+<p>云悉（<a target="_blank" rel="noopener" href="https://www.yunsee.cn/%EF%BC%89">https://www.yunsee.cn/）</a> </p>
+<p>360（<a target="_blank" rel="noopener" href="https://fp.shuziguanxing.com/#/%EF%BC%89%E8%A6%81%E7%99%BB%E9%99%86">https://fp.shuziguanxing.com/#/）要登陆</a></p>
+<p>潮汐（<a target="_blank" rel="noopener" href="http://finger.tidesec.net/%EF%BC%89">http://finger.tidesec.net/）</a></p>
+<p>数字观星（360子公司）</p>
+<p>代码仓库（国内常用）<a target="_blank" rel="noopener" href="https://gitee.com/">https://gitee.com/</a></p>
+<p>whatweb hnist.cn</p>
+<p>信息收集 目的 </p>
+<p>内容：域名、子域名（第三方服务，可能不在同一ip上）、真实IP    ip端口    ip是否绑定其他端口、资产   </p>
+<p>whois:组测邮箱、whois反查找到注册人</p>
+<p>github可以查找搜索引擎工具</p>
+<p>crt证书透明度公开曰至枚举</p>
+<p>站长之家：多工具集成站点</p>
+<p>cdn查询：费用贵  重要的业务会做cdn</p>
+<p>指纹识别主要是找cms 用的什么语言、框架</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -598,7 +911,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-30 19:58:22" itemprop="dateModified" datetime="2023-07-30T19:58:22+08:00">2023-07-30</time>
+      <time title="Modified: 2023-08-03 22:00:41" itemprop="dateModified" datetime="2023-08-03T22:00:41+08:00">2023-08-03</time>
     </span>
 
   
@@ -717,11 +1030,23 @@
 <p>“二级域名”就是在一级域名前再加一级，如”baidu.com”。</p>
 <p>二级域名以上级别的域名，统称为子域名，不在“注册域名”的范畴中。</p>
 <p>根据ICANN说法，过一两年组织可以申请注册顶级域名。</p>
-<h3 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h3><h5 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h5><p>语法：</p>
+<h3 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h3><h3 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h3><h5 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h5><p>语法：</p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/AA76AD4A-EBED-4523-8360-9C8553E02569.png"></p>
 <h5 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h5><p>与Google搜索大致相同		精确匹配：《》 “搜索内容”</p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/39F786EA-D8EB-4a2b-9007-BD1C8C589D22.png"></p>
-<h3 id="空间搜索引擎"><a href="#空间搜索引擎" class="headerlink" title="空间搜索引擎"></a>空间搜索引擎</h3><h5 id="FOFA-Shodan-ZoomEye-等"><a href="#FOFA-Shodan-ZoomEye-等" class="headerlink" title="FOFA  Shodan   ZoomEye 等"></a>FOFA  Shodan   ZoomEye 等</h5>
+<h3 id="空间搜索引擎"><a href="#空间搜索引擎" class="headerlink" title="空间搜索引擎"></a>空间搜索引擎</h3><h5 id="FOFA-Shodan-ZoomEye-等"><a href="#FOFA-Shodan-ZoomEye-等" class="headerlink" title="FOFA  Shodan   ZoomEye 等"></a>FOFA  Shodan   ZoomEye 等</h5><p>我要收集那些信息？</p>
+<p>会用到什么工具</p>
+<h1 id="信息收集-1"><a href="#信息收集-1" class="headerlink" title="信息收集"></a>信息收集</h1><h2 id="已知根域"><a href="#已知根域" class="headerlink" title="已知根域"></a>已知根域</h2><p>例 baidu.com</p>
+<p>1.baidu.com   真实ip<br>2.子域名    ip<br>3.敏感信息（api接口，路径，js，住址，电话，通讯软件)<br>4.所有网站的指纹<br>5.测试网站是否具有漏洞poc，exp（危害比较大，不推荐）</p>
+<h2 id="已知国家（地区）或者行业、-单位"><a href="#已知国家（地区）或者行业、-单位" class="headerlink" title="已知国家（地区）或者行业、 单位"></a>已知国家（地区）或者行业、 单位</h2><p>中国电信<br>1.有哪些根域<br>2.分别有什么子域名<br>3.公司结构拓扑<br>4.还有上面5点</p>
+<h3 id="api"><a href="#api" class="headerlink" title="api"></a>api</h3><p>具有一定功能的网站路径</p>
+<h1 id="社工"><a href="#社工" class="headerlink" title="社工"></a>社工</h1><p>Google：常用昵称，手机号，姓名，学校，公司</p>
+<p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/QQ%E5%9B%BE%E7%89%8720230731202853.png"></p>
+<p>社工库：</p>
+<p>whois查ip</p>
+<p>爱企查可以搜索子公司</p>
+<p>dnsdumpster.com     拓扑图</p>
+
       
     </div>
 
