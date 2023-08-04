@@ -911,7 +911,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-08-03 22:00:41" itemprop="dateModified" datetime="2023-08-03T22:00:41+08:00">2023-08-03</time>
+      <time title="Modified: 2023-08-04 19:37:14" itemprop="dateModified" datetime="2023-08-04T19:37:14+08:00">2023-08-04</time>
     </span>
 
   
@@ -924,7 +924,36 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h3><ul>
+          <h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h3 id="一、域名"><a href="#一、域名" class="headerlink" title="一、域名"></a>一、域名</h3><p>可使用ICP备案网、企查查、爱企查收集</p>
+<h3 id="二、子域名"><a href="#二、子域名" class="headerlink" title="二、子域名"></a>二、子域名</h3><p>子域名枚举可以在测试范围内发现更多的域或子域，这将增大漏洞发现的几率。</p>
+<p>子域名收集方法<br>1、爆破<br>        使用在线子域名爆破或子域名挖掘机</p>
+<p>2、搜索引擎</p>
+<p>3、空间收索引擎搜索域名</p>
+<h3 id="三、CND"><a href="#三、CND" class="headerlink" title="三、CND"></a>三、CND</h3><p>CDN（Content Delivery Network，即内容分发网络)。CDN是构建在现有网络基础之上的只能虚拟网络，依靠部署在各地的边缘服务器，通过中心的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CND可以减轻源服务器的访客压力，将访客的请求发送到不同的缓存服务器中，不仅加快了访问速度，而且也可以有效的抵抗<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=DDOS%E6%94%BB%E5%87%BB&spm=1001.2101.3001.7020">DDOS攻击</a>。</p>
+<p>CND检测方法：多地ping、dig、nslookup、ping、子域名</p>
+<p>绕过CND获取真实IP：子域名、DNS历史记录、邮箱、探针、漏洞</p>
+<h3 id="四、IP收集"><a href="#四、IP收集" class="headerlink" title="四、IP收集"></a>四、IP收集</h3><p>端口信息：Nmap、御剑端口扫描</p>
+<p>查询C段：网络空间引擎</p>
+<p>旁站：IP反查域名、DNS反向解析记录</p>
+<h3 id="五、网络空间搜索引擎"><a href="#五、网络空间搜索引擎" class="headerlink" title="五、网络空间搜索引擎"></a>五、网络空间搜索引擎</h3><p>什么是网络空间搜索引擎</p>
+<p>网络空间搜索引擎不同于普通的搜索引擎（百度等之类的），而是直接搜索网络中的主机，将主机信息汇聚成数据库，然后显示出主机的IP、端口、中间件、摄像头、工控设备banner等其他网络设备信息。可以按照普通的搜索引擎的规则来搜索</p>
+<p>常用的空间搜索引擎有：FOFA、zoom eye、360quake、shodan、Sub Topic</p>
+<h3 id="六、搜索引擎检索"><a href="#六、搜索引擎检索" class="headerlink" title="六、搜索引擎检索"></a>六、搜索引擎检索</h3><p>Google语法、百度语法（与谷歌语法差不多）</p>
+<p>1.intitle搜索范围限定在网页标题上面</p>
+<p>2.site搜索范围限定在特定站点中</p>
+<p>3.inurl搜索范围限定在url链接中</p>
+<p>4.双引号””和书名《》精确匹配</p>
+<p>5.filetype：是查找文件类型，找指定文件下载</p>
+<p>6.“-”：减法语法—-去除所有包涵特定关键词的网页</p>
+<p>7.index：只搜索网页部分中包含的文字</p>
+<p>8.folder：指定文件夹级搜索语法</p>
+<h3 id="七、指纹识别"><a href="#七、指纹识别" class="headerlink" title="七、指纹识别"></a>七、指纹识别</h3><p>开发框架：struts、Spring MVC</p>
+<p>WEB组件：Wapplyzer组件</p>
+<p>CMS识别：360指纹收录平台、云悉、whatweb、潮汐</p>
+<h3 id="八、敏感信息"><a href="#八、敏感信息" class="headerlink" title="八、敏感信息"></a>八、敏感信息</h3><p>敏感信息的分类：</p>
+<p>个人信息、系统版本信息、系统认证信息、设备标识信息等</p>
+<p>个人信息<br>常见的个人信息有：身份信息、生物识别信息、财产信息、健康生理信息、网络身份标识信息，以及电话号码、性取向、婚史、宗教信仰、未公开的违法犯罪记录、通信记录和内容、行踪轨迹、网页浏览记录、住宿信息、精准定位信息等；<br>系统版本信息<br>系统用到的中间件及其他三方件的版本号，以及数据库的版本信息等；<br>系统认证信息<br>登录时的口令、session、token、cookie及其他认证信息；<br>设备标识信息<br>手机的IMEI、电脑的mac地址、其他机柜的一些全网唯一标识类等；</p>
+<ul>
 <li><p>域名信息查询 - 腾讯云 ：<a target="_blank" rel="noopener" href="https://whois.cloud.tencent.com/domain">https://whois.cloud.tencent.com/domain</a>?</p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/0D68A899-DB80-4922-AE54-92E815A36573.png"></p>
 </li>
@@ -933,7 +962,6 @@
 <li><p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/QQ%E5%9B%BE%E7%89%8720230730171324.png"></p>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://www.whois.com/whois/">https://www.whois.com/whois/</a></p>
-<p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/QQ%E5%9B%BE%E7%89%8720230730171244.png"></p>
 </li>
 <li><p>学信网：<a target="_blank" rel="noopener" href="https://cn.linkedin.com(找工作)/">https://cn.linkedin.com（找工作）</a></p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/QQ%E5%9B%BE%E7%89%8720230730171244.png"></p>
@@ -1030,7 +1058,7 @@
 <p>“二级域名”就是在一级域名前再加一级，如”baidu.com”。</p>
 <p>二级域名以上级别的域名，统称为子域名，不在“注册域名”的范畴中。</p>
 <p>根据ICANN说法，过一两年组织可以申请注册顶级域名。</p>
-<h3 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h3><h3 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h3><h5 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h5><p>语法：</p>
+<h3 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h3><h5 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h5><p>语法：</p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/AA76AD4A-EBED-4523-8360-9C8553E02569.png"></p>
 <h5 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h5><p>与Google搜索大致相同		精确匹配：《》 “搜索内容”</p>
 <p><img src="/../../../%E5%9B%BE%E7%89%87/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/39F786EA-D8EB-4a2b-9007-BD1C8C589D22.png"></p>
